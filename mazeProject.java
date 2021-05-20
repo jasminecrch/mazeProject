@@ -1,3 +1,4 @@
+/*This Code shows the main maze and the key events for the game-Jasmine Crouch*/
 import java.util.*;
 import java.text.*;
 import java.io.*;
@@ -70,17 +71,17 @@ public static void main(String[] args)
 
    launch(args);
 }
-public class KeyListenerDown implements EventHandler<KeyEvent>
+public class KeyListenerDown implements EventHandler<KeyEvent>//events to move player square
  {
    int posY=150;
    int posX=0;
-   public void handle(KeyEvent e)
+   public void handle(KeyEvent e)//code to change the position of the square
     {
       if(e.getCode() == KeyCode.UP)
       {
          posY-=1;
       }
-      if(e.getCode() == KeyCode.DOWN)//when s is pressed
+      if(e.getCode() == KeyCode.DOWN)
       {
         
         posY+=1; 
